@@ -1,0 +1,9 @@
+# ninja log v6
+3	131	1724504694307692487	CMakeFiles/philo.dir/srcs/mutex.c.o	6b3084a389dc1895
+3	131	1724504694308147862	CMakeFiles/philo.dir/srcs/utils.c.o	2f5d5879d9012dd2
+2	132	1724504694306555238	CMakeFiles/philo.dir/srcs/main.c.o	d5041aaae141db15
+2	132	1724504694307174987	CMakeFiles/philo.dir/srcs/actions.c.o	d350e77c7e58d3d3
+2	132	1724504694307390945	CMakeFiles/philo.dir/srcs/checks.c.o	a525709b866773ee
+3	132	1724504694307556862	CMakeFiles/philo.dir/srcs/init.c.o	c0159bc27de55eb3
+3	132	1724504694307817362	CMakeFiles/philo.dir/srcs/threads.c.o	1362d5a5c8aab9d7
+132	227	1724504694436943587	philo	c5d33f86764627fe
