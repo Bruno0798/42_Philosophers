@@ -1,3 +1,3 @@
-/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug/CMakeFiles/philo.dir
-/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/bsousa-d/Desktop/42_Philosophers/cmake-build-debug/CMakeFiles/philo.dir
+/home/bsousa-d/Desktop/42_Philosophers/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/bsousa-d/Desktop/42_Philosophers/cmake-build-debug/CMakeFiles/rebuild_cache.dir

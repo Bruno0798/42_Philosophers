@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:15:15 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/24 13:42:52 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:39:44 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ bool	ft_check_values(t_data *data)
 
 bool	ft_init_struct(int const argc, char **argv, t_data *data)
 {
-	if(!ft_check_char(argc, argv))
+	if (!ft_check_char(argc, argv))
 		return (false);
 	data->n_philo = ft_atoi(argv[1]);
 	data->t_die = ft_atoi(argv[2]);
@@ -39,6 +39,7 @@ bool	ft_init_struct(int const argc, char **argv, t_data *data)
 	}
 	else
 		data->n_eat = 0;
+	data->p_dead = false;
 	return (true);
 }
 

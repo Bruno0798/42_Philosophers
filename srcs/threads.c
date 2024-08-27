@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:18:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/24 14:22:04 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:41:55 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 void	ft_waiter(t_data *data)
 {
+	int	i;
+
 	while (1)
 	{
-		for (int i = 0; i < data->n_philo; i++)
+		i = 0;
+		while (i < data->n_philo)
 		{
 			if (ft_check_meals(&data->philos[i]))
 				return ;
 			pthread_mutex_lock(&data->eating);
 			if (ft_get_time() - data->philos[i].last_meal >= data->t_die)
 			{
-				ft_print_status(DEAD, &data->philos[i]);
+				ft_print_status(RED DEAD ENDC, &data->philos[i]);
 				pthread_mutex_lock(&data->dead);
 				data->p_dead = (true);
 				pthread_mutex_unlock(&data->dead);
@@ -31,6 +34,7 @@ void	ft_waiter(t_data *data)
 				return ;
 			}
 			pthread_mutex_unlock(&data->eating);
+			i++;
 		}
 	}
 }

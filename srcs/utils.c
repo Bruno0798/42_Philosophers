@@ -6,13 +6,13 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 19:11:55 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/24 14:04:37 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:42:35 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/philosophers.h"
 
-bool ft_check_char(int const argc, char **argv)
+bool	ft_check_char(int const argc, char **argv)
 {
 	int	i;
 	int	j;
@@ -31,6 +31,7 @@ bool ft_check_char(int const argc, char **argv)
 	}
 	return (true);
 }
+
 long	ft_get_time(void)
 {
 	struct timeval	time;

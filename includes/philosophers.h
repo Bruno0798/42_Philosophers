@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 18:59:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/24 14:29:35 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:36:30 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@
 # define BLUE     "\033[1m\033[34m"
 # define ENDC	"\033[0m"
 
-# define ARGS_ERROR "Wrong number of arguments\n\033[0m" \
-"Try: \033[1m\033[32m./philo \033[1m\033[33mPhilosophers Number" \
-"\033[1m\033[34mTime to die \033[1m\033[35mTime to eat" \
-" \033[1m\033[36mTime to sleep \033[1m\033[31m[Number of meals]\n\033[0m"
+# define ARGS_ERROR "Wrong number of arguments\n\033[0m \
+Try: \033[1m\033[32m./philo \033[1m\033[33mPhilosophers Number \
+\033[1m\033[34mTime to die \033[1m\033[35mTime to eat \
+ \033[1m\033[36mTime to sleep \033[1m\033[31m[Number of meals]\n\033[0m"
 # define ARGS_INVALID "Wrong values: invalid characters, only numbers\n"
 # define MUTEX_ERROR "Error: Mutex! \n"
 # define MALLOC_ERROR "Error: Malloc! \n"

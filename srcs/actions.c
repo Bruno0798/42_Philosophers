@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:21:36 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/24 14:02:19 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:38:08 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ bool	ft_one_philo(t_philo *philo)
 {
 	if (philo->data->n_philo == 1)
 	{
-		ft_print_status(FORK, philo);
+		ft_print_status(YELLOW FORK ENDC, philo);
 		usleep(philo->data->t_die * 1000);
-		ft_print_status(DEAD, philo);
+		ft_print_status(RED DEAD ENDC, philo);
 		pthread_mutex_lock(&philo->data->dead);
 		philo->data->p_dead = (true);
 		pthread_mutex_unlock(&philo->data->dead);
@@ -29,22 +29,22 @@ bool	ft_one_philo(t_philo *philo)
 
 void	ft_take_forks(t_philo *philo)
 {
-	int fork;
+	int	fork;
 
 	fork = philo->id % philo->data->n_philo;
 	if (philo->id % 2)
 	{
 		pthread_mutex_lock(&philo->data->forks[philo->id - 1]);
-		ft_print_status(FORK, philo);
+		ft_print_status(YELLOW FORK ENDC, philo);
 		pthread_mutex_lock(&philo->data->forks[fork]);
-		ft_print_status(FORK, philo);
+		ft_print_status(YELLOW FORK ENDC, philo);
 	}
 	else
 	{
 		pthread_mutex_lock(&philo->data->forks[fork]);
-		ft_print_status(FORK, philo);
+		ft_print_status(YELLOW FORK ENDC, philo);
 		pthread_mutex_lock(&philo->data->forks[philo->id - 1]);
-		ft_print_status(FORK, philo);
+		ft_print_status(YELLOW FORK ENDC, philo);
 	}
 }
 
@@ -54,7 +54,7 @@ void	ft_eat(t_philo *philo)
 	long	current_time;
 
 	ft_take_forks(philo);
-	ft_print_status(EAT, philo);
+	ft_print_status(GREEN EAT ENDC, philo);
 	pthread_mutex_lock(&philo->data->eating);
 	philo->last_meal = ft_get_time();
 	pthread_mutex_unlock(&philo->data->eating);
@@ -73,7 +73,7 @@ void	ft_eat(t_philo *philo)
 	pthread_mutex_unlock(&philo->data->eating);
 	pthread_mutex_unlock(&philo->data->forks[philo->id % philo->data->n_philo]);
 	pthread_mutex_unlock(&philo->data->forks[philo->id - 1]);
-	ft_print_status(SLEEP, philo);
+	ft_print_status(BLUE SLEEP ENDC, philo);
 }
 
 void	ft_wait(t_philo *philo)

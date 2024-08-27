@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "philo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-philo-Debug-67de43b8d70b67693346.json",
+					"jsonFile" : "target-philo-Debug-c412321c987dea2a8d66.json",
 					"name" : "philo",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug",
-		"source" : "/Users/bruno/Desktop/42 Porto/42_Philosophers"
+		"build" : "/home/bsousa-d/Desktop/42_Philosophers/cmake-build-debug",
+		"source" : "/home/bsousa-d/Desktop/42_Philosophers"
 	},
 	"version" : 
 	{

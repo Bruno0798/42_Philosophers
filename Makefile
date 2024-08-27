@@ -49,7 +49,7 @@ OBJ_DIR = obj
 # · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·#
 
 NAME    = philo
-SRC_FILES = main.c checks.c mutex.c init.c actions.c threads.c utils.c
+SRC_FILES = main.c checks.c mutex.c init.c actions.c threads.c utils.c free.c
 
 SRC = $(addprefix $(SRC_DIR)/, $(SRC_FILES))
 OBJ = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC))
@@ -69,7 +69,7 @@ all: $(NAME)
 #	@printf "\n\n"
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(INCLUDE) $(OBJ) $(LIBFT_LIB) $(LIBS_USED)	 -o $@
+	$(CC) $(CFLAGS) $(INCLUDE) $(OBJ) $(LIBFT_LIB) $(LIBS_USED)	-fsanitize=address -o $@
 	@echo "$(GREEN)$(NAME)$(RESET) Created"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c

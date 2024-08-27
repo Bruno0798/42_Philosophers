@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:17:26 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/23 18:44:04 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:40:39 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,7 @@ bool	ft_init_forks(t_data *data)
 	while (i < data->n_philo)
 	{
 		if (pthread_mutex_init(&data->forks[i], NULL))
-		{
-			// TODO FREE FORKS
 			return (printf("Error: mutex init\n"), (false));
-		}
 		i++;
 	}
 	return (true);
