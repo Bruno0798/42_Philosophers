@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:18:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/23 18:33:41 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/24 14:22:04 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ bool	ft_init_philos(t_philo **philos, t_data *data)
 	data->forks = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t)
 			* data->n_philo);
 	if (!data->forks)
-		return (printf(MALLOC_ERROR), (false));
+		return (printf(MALLOC_ERROR), free(philos), false);
 	while (i < data->n_philo)
 	{
 		memset((void *)&(*philos)[i], 0, sizeof(t_philo));

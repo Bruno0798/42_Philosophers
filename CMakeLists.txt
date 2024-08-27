@@ -21,6 +21,7 @@ set(SRC_FILES
         srcs/mutex.c
         srcs/threads.c
         srcs/utils.c
+        srcs/free.c
 )
 
 # Define the executable

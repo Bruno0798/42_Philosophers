@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="philo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="philo">
+				<Option output="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug/philo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/bruno/Desktop/42 Porto/42_Philosophers/includes"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/16/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 philo"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="philo/fast">
+				<Option output="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug/philo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/bruno/Desktop/42 Porto/42_Philosophers/includes"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/16/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 philo/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/bruno/Desktop/42 Porto/42_Philosophers/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/bruno/Desktop/42\ Porto/42_Philosophers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/includes/philosophers.h">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/actions.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/checks.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/free.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/init.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/main.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/mutex.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/threads.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/srcs/utils.c">
+			<Option target="philo"/>
+		</Unit>
+		<Unit filename="/Users/bruno/Desktop/42 Porto/42_Philosophers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

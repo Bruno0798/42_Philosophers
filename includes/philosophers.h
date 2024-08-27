@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 18:59:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/23 18:52:53 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/24 14:29:35 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,11 @@
 # define SLEEP "is sleeping"
 # define THINK "is thinking"
 # define DEAD "died"
+
+# define CLEAN_PHILOS 1
+# define CLEAN_FORKS 2
+# define CLEAN_FORK_MUTEXES 3
+# define CLEAN_ALL_MUTEXES 4
 
 typedef struct s_data
 {
@@ -101,4 +106,7 @@ long	ft_get_time(void);
 void	ft_print_status(char *str, t_philo *philo);
 bool	ft_isdigit(char c);
 int		ft_atoi(const char *str);
+
+// ************************* UTILS ************************* //
+void	ft_clean(t_data *data, int option);
 #endif //PHILOSOPHERS_H
