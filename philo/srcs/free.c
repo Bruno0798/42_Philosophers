@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 14:23:36 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/27 12:39:08 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:51:06 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ void	ft_clean(t_data *data, int option)
 	}
 	if (option >= CLEAN_FORKS)
 		free(data->forks);
-	if (option >= CLEAN_PHILOS)
+	if (option >= CLEAN_PHILOS && !data->philos)
 		free(data->philos);
 }

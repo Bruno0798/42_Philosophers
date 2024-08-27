@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:21:36 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/27 12:38:08 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/27 14:03:43 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,8 @@ void	ft_eat(t_philo *philo)
 	long	current_time;
 
 	ft_take_forks(philo);
-	ft_print_status(GREEN EAT ENDC, philo);
 	pthread_mutex_lock(&philo->data->eating);
+	ft_print_status(GREEN EAT ENDC, philo);
 	philo->last_meal = ft_get_time();
 	pthread_mutex_unlock(&philo->data->eating);
 	start_time = ft_get_time();

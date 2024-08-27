@@ -61,12 +61,6 @@ OBJ = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRC))
 # · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·#
 
 all: $(NAME)
-#	@printf "\n"
-#	@echo $(G)"       _     _     _       _ _ "$(X)
-#	@echo $(G)" _____|_|___|_|___| |_ ___| | |"$(X)
-#	@echo $(G)"|     | |   | |_ -|   | -_| | |"$(X)
-#	@echo $(G)"|_|_|_|_|_|_|_|___|_|_|___|_|_|"$(X)
-#	@printf "\n\n"
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(INCLUDE) $(OBJ) $(LIBFT_LIB) $(LIBS_USED)	-fsanitize=address -o $@
@@ -92,9 +86,6 @@ commit: fclean
 	git add -A .
 	git commit -m 'Automatic commit of successful build $(BUILDID)'
 	git push origin main
-
-run: all
-	@./$(NAME)
 
 valgrind: all
 	@clear
