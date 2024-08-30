@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:18:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/27 13:53:16 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/30 16:12:32 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,4 +97,24 @@ bool	ft_join_threads(t_data *data)
 		i++;
 	}
 	return ((true));
+}
+
+void	ft_sleep(t_philo *philo)
+{
+	long	start_time;
+	long	current_time;
+
+	start_time = ft_get_time();
+	while (1)
+	{
+		current_time = ft_get_time();
+		if (current_time - start_time >= philo->data->t_sleep
+			|| ft_check_dead(philo))
+		{
+			if (philo->id % 2 == 0)
+				usleep(1000);
+			break ;
+		}
+		usleep(100);
+	}
 }

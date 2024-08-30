@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 19:11:55 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/27 12:42:35 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/30 16:22:06 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,9 @@ void	ft_print_status(char *str, t_philo *philo)
 	if (ft_check_dead(philo))
 		return ;
 	pthread_mutex_lock(&philo->data->print);
-	printf("%ld %d %s\n", ft_get_time() - philo->data->time, philo->id, str);
+	if (!ft_check_meals(philo))
+		printf("%ld %d %s\n",
+			ft_get_time() - philo->data->time, philo->id, str);
 	pthread_mutex_unlock(&philo->data->print);
 }
 

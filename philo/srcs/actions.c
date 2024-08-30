@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 18:21:36 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/27 14:03:43 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/30 16:11:21 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,8 +87,6 @@ void	ft_wait(t_philo *philo)
 void	*ft_routine(void *arg)
 {
 	t_philo	*philo;
-	long	start_time;
-	long	current_time;
 
 	philo = (t_philo *)arg;
 	if (ft_one_philo(philo))
@@ -97,14 +95,7 @@ void	*ft_routine(void *arg)
 	while (1)
 	{
 		ft_eat(philo);
-		start_time = ft_get_time();
-		while (1)
-		{
-			current_time = ft_get_time();
-			if (current_time - start_time >= philo->data->t_sleep)
-				break ;
-			usleep(4000);
-		}
+		ft_sleep(philo);
 		ft_print_status(THINK, philo);
 		if (ft_check_meals(philo) || ft_check_dead(philo))
 			break ;

@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 18:59:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/27 13:58:10 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/30 16:10:53 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ void	ft_waiter(t_data *data);
 void	ft_take_forks(t_philo *philo);
 void	ft_eat(t_philo *philo);
 void	*ft_routine(void *arg);
+void	ft_sleep(t_philo *philo);
 
 // ************************* THREADS ************************* //
 bool	ft_init_threads(t_data *data);
