@@ -6,7 +6,7 @@
 /*   By: bsousa-d <bsousa-d@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 18:59:27 by bsousa-d          #+#    #+#             */
-/*   Updated: 2024/08/30 16:10:53 by bsousa-d         ###   ########.fr       */
+/*   Updated: 2024/08/30 17:01:00 by bsousa-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,6 @@ typedef struct s_philo
 	int				n_eat;
 	long			last_meal;
 	pthread_t		thread;
-	pthread_mutex_t	*print;
 	t_data			*data;
 }				t_philo;
 
