@@ -1,1 +1,0 @@
-/usr/bin/cc  -g -Wall -Werror -Wextra -g CMakeFiles/philo.dir/srcs/main.c.o CMakeFiles/philo.dir/srcs/actions.c.o CMakeFiles/philo.dir/srcs/checks.c.o CMakeFiles/philo.dir/srcs/init.c.o CMakeFiles/philo.dir/srcs/mutex.c.o CMakeFiles/philo.dir/srcs/threads.c.o CMakeFiles/philo.dir/srcs/utils.c.o CMakeFiles/philo.dir/srcs/free.c.o -o philo 
